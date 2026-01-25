@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.dashboard_appilix{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F5F1;
+}
+
+
+/*------------------ Side Menubar ----------------------*/
+.dashboard_appilix .sidebar{
+    width: 230px;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*------------------- Appilix Brand ------------------*/
+.dashboard_appilix .sidebar .header{
+    width: 100%;
+    padding: 10px 10px 1px 10px;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    border-top: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    border-left: 1px solid #E8E8E8;
+    
+    
+}
+
+.dashboard_appilix .sidebar .header .brand{
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard_appilix .sidebar .header .brand .brand_logo{
+    display: flex;  
+    align-items: center;
+    gap: 10px; 
+}
+
+.dashboard_appilix .sidebar .header .brand .brand_logo .logo{
+    width: 31px;
+    height: 28px;
+    background: url(Images/Group\ \(1\).svg) no-repeat center;
+}
+
+.dashboard_appilix .sidebar .header .brand .brand_logo .name{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.dashboard_appilix .sidebar .header .brand .brand_logo .name p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.dashboard_appilix .sidebar .header .brand .brand_logo .name h2{
+    font-size: 14px;
+    font-weight: 500;
+    color: #272727;
+}
+
+.dashboard_appilix .sidebar .header .brand .icon{
+    height: 16px;
+    width: 16px;
+    background: url(Images/Vector\ \(1\).svg) no-repeat center;
+    cursor: pointer;
+}
+
+
+.dashboard_appilix .sidebar .header .line,
+.dashboard_appilix .sidebar .manu .top_menu .line{
+    border-bottom: 1px solid #E8E8E8;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+/*----------------- Sidebar Menu ---------------------*/
+.dashboard_appilix .sidebar .manu{
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard_appilix .sidebar .manu .top_menu,
+.dashboard_appilix .sidebar .manu .bottom_menu {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #E8E8E8;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .menu_card, 
+.dashboard_appilix .sidebar .manu .bottom_menu .menu_card{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .menu_card:hover, 
+.dashboard_appilix .sidebar .manu .bottom_menu .menu_card:hover{
+    box-shadow: 0 1px 1px 1px #E8E8E8;
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .menu_card .card_logo, 
+.dashboard_appilix .sidebar .manu .bottom_menu .menu_card .card_logo{
+    height: 16px;
+    width: 16px; 
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .menu_card h3, 
+.dashboard_appilix .sidebar .manu .bottom_menu .menu_card h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #383838;
+
+}
+
+
+/* -------------------Card logo ---------------------*/
+ 
+.dashboard_appilix .sidebar .manu .top_menu .card_1 .card_logo{
+    background: url(Images/elements\ \(1\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_2 .card_logo{
+    background: url(Images/elements\ \(2\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_3 .card_logo{
+    background: url(Images/elements\ \(3\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_4 .card_logo{
+    background: url(Images/elements\ \(4\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_5 .card_logo{
+    background: url(Images/elements\ \(5\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_6 .card_logo{
+    background: url(Images/elements\ \(6\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_7 .card_logo{
+    background: url(Images/elements\ \(7\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_8 .card_logo{
+    background: url(Images/elements\ \(8\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_9 .card_logo{
+    background: url(Images/elements\ \(9\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_10 .card_logo{
+    background: url(Images/elements\ \(10\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .card_11 .card_logo{
+    background: url(Images/elements\ \(11\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .bottom_menu .card_12 .card_logo{
+    background: url(Images/elements\ \(12\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .bottom_menu .card_13 .card_logo{
+    background: url(Images/elements\ \(13\).svg) no-repeat center; 
+
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .channels{
+    margin: 10px 0;
+    padding: 3px 5px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .channels p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #44444480;
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .channels .toggler{
+    width: 16px;
+    height: 16px;
+    background: url(Images/elements\ toggle.svg) no-repeat center;
+    cursor: pointer;
+}
+
+
+.dashboard_appilix .sidebar .manu .top_menu .active, 
+.dashboard_appilix .sidebar .manu .bottom_menu .active{
+    background-color: #1976681A;
+    color: #197668;
+    border: 1px solid #19766814;
+    
+}
+
+.dashboard_appilix .sidebar .manu .top_menu .active:hover, 
+.dashboard_appilix .sidebar .manu .bottom_menu .active:hover{
+    box-shadow: none;
+    
+}
+
+.dashboard_appilix .sidebar .manu .bottom_menu{
+    border-radius: 8px;
+    border-top: 1px solid #E8E8E8 ;
+}
+
+
