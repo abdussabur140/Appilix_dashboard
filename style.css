@@ -236,6 +236,13 @@
     cursor: pointer;
 }
 
+.dashboard_appilix .sidebar .manu .top_menu .channels .toggler:hover{
+    border-radius: 4px;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 1px 1px 1px #E8E8E8;
+
+}
+
 
 .dashboard_appilix .sidebar .manu .top_menu .active, 
 .dashboard_appilix .sidebar .manu .bottom_menu .active{
