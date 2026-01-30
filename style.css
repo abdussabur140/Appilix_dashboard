@@ -12,12 +12,13 @@
     width: 100%;
     height: 100vh;
     background-color: #F4F5F1;
+    display: flex;
 }
 
 
 /*------------------ Side Menubar ----------------------*/
 .dashboard_appilix .sidebar{
-    width: 230px;
+    min-width: 230px;
     height: 100vh;
     padding: 10px;
     display: flex;
@@ -262,5 +263,408 @@
     border-radius: 8px;
     border-top: 1px solid #E8E8E8 ;
 }
+
+
+
+/*-------------------------- Main Section ---------------------------*/
+.dashboard_appilix .main_appilix{
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+}
+
+
+/*--------------------------- Main Section Nav --------------------------*/
+.dashboard_appilix .main_appilix .main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_left h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_left p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #38383899;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .search_bar{
+    display: flex;
+    gap: 6px;
+    padding: 12px 11px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .search_bar .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/search-01.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .search_bar input{
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .search_bar input::placeholder{
+    font-size: 13px;
+    font-weight: 400;
+    color: #38383899;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .notification{
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .search .notification .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/notification-01.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .line{
+    height: 30px;
+    margin: 6px 0;
+    border-left: 1px solid #E8E8E8;
+
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    background: url(Images/Avatar\ Image.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .user_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .user_info .name_prof{
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .user_info .name_prof p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .user_info .name_prof span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #38383899;
+}
+
+.dashboard_appilix .main_appilix .main_nav .nav_right .user .user_info .icon{
+    height: 16px;
+    width: 16px;
+    background: url(Images/user_icon.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 100vh;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview{
+    display: flex;
+    flex: 1.75;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 15px 15px 22px 15px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right{
+    display: flex;
+    gap: 30px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay{
+    display: flex;
+    gap: 20px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .in_time,
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .late{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .in_time .logo{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #197668;
+    box-shadow: 0 1px 4px 0 #19766880;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .late .logo{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #19766859;
+    box-shadow: 0 1px 4px 0 #19766840;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .in_time p,
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .delay .late p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #38383880;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .month{
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    gap: 5px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .month h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: #565656;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .nav .right .month .icon{
+    height: 12px;
+    width: 12px;
+    background: url(Images/month_icon.svg) no-repeat center;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .chart{
+    display: flex;
+    align-items: end;
+    height: 350px;
+    gap: 13px;
+    padding: 0 7px 0 2px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .y_axis{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 45px;
+    padding: 0 7px 0 2px;
+    position: relative;
+    bottom: 40px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .y_axis p,
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .month p{
+    font-size: 10px;
+    font-weight: 400;
+    color: #38383899;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 18px;
+    justify-content: space-between;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .month{
+    display: flex;
+    gap: 10px;
+    width: 39px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .month .diagram{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .month .diagram .in_time{
+    border-radius: 8px;
+    background-color: #F3F3F3;
+    width: 39px;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .month .diagram .late{
+    border-radius: 8px;
+    background-color: #F3F3F3;
+    width: 39px;
+
+}
+
+
+/*---------- Every Month Late and timeing presient height -------------------------*/
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .jan .diagram .in_time{
+    height: 204px;
+    background-color: #197668;
+    box-shadow: 0 -1px 2.5px 0 #AECFCA;
+
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .feb .diagram .in_time{
+    height: 179px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .mar .diagram .in_time{
+    height: 199px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .apr .diagram .in_time{
+    height: 280px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .may .diagram .in_time{
+    height: 234px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .jun .diagram .in_time{
+    height: 264px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .jul .diagram .in_time{
+    height: 204px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .aug .diagram .in_time{
+    height: 243px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .sep .diagram .in_time{
+    height: 274px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .oct .diagram .in_time{
+    height: 291px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .nov .diagram .in_time{
+    height: 243px;
+}
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .dec .diagram .in_time{
+    height: 232px;
+}
+
+
+
+.dashboard_appilix .main_appilix .content .overview .monthly_overview .bar_diagram .jan .diagram .late{
+    height: 46px;
+    background-color: #19766859;
+    box-shadow: 0 -1px 6.5px 0 #1164574d;
+
+}
+
+
+.dashboard_appilix .main_appilix .content .time_traker{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+
+
+
+
+
+
 
 
