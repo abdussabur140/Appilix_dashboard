@@ -267,15 +267,20 @@
 
 
 /*-------------------------- Main Section ---------------------------*/
-.dashboard_appilix .main_appilix{
-    width: 100%;
+
+.dashboard_appilix .zoom_out_centering {
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+.dashboard_appilix .zoom_out_centering .main_appilix{
+    height: 100%;
     margin: 10px 10px 10px 0;
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #E8E8E8;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -423,6 +428,7 @@
 }
 
 .dashboard_appilix .main_appilix .content .overview{
+    max-width: 735px;
     display: flex;
     flex: 1.75;
     flex-direction: column;
@@ -855,6 +861,7 @@
 
 
 .dashboard_appilix .main_appilix .content .time_traker_schedule{
+    max-width: 420px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -1045,6 +1052,8 @@
 }
 
 .dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .active{
+    display: flex;
+    flex-direction: row;
     border-radius: 8px;
     background-color: white;
 }
@@ -1105,6 +1114,18 @@
     font-size: 11px;
     font-weight: 400;
     color: #DFA000;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .main_content .sub_details .subject .status .logo{
+    height: 9px;
+    width: 9px;
+    background: url(Images/status_icon_2.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .main_content .sub_details .subject .status p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #16A805;
 }
 
 .dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .project_name{
@@ -1193,6 +1214,12 @@
     height: 20px;
     width: 20px;
     background: url(Images/agency.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .with .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/Logomark.svg) no-repeat center;
 }
 
 .dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .with p{
