@@ -275,6 +275,7 @@
     border: 1px solid #E8E8E8;
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -285,6 +286,7 @@
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #E8E8E8;
+    
 }
 
 .dashboard_appilix .main_appilix .main_nav .nav_left{
@@ -852,13 +854,436 @@
 
 
 
-.dashboard_appilix .main_appilix .content .time_traker{
+.dashboard_appilix .main_appilix .content .time_traker_schedule{
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 15px;
 
 }
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 15px 15px 32px 15px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .title h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .title .history{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #FBFBFB;
+    border: 1px solid #E8E8E8;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .title .history .logo{
+    height: 12px;
+    width: 12px;
+    background: url(Images/time_history.svg) no-repeat center;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .title .history p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #565656;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .time .date{
+    font-size: 18px;
+    font-weight: 400;
+    color: #38383899;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .time .hour{
+    font-size: 48px;
+    font-weight: 500;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .pause,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .stop{
+    display: flex;
+    gap: 5px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .active {
+    background-color: #197668;
+    color: #FFFFFF;
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .pause .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/pause_icon.svg) no-repeat center;    
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .stop .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/stop_icon.svg) no-repeat center;    
+
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .pause p,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .time_traker .clock .button .stop p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule{
+    padding: 22px 15px 0 15px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .schedule_heading{
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .task,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .meeting{
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .task p,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .meeting p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .task .number_of_task,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .meeting .number_of_meeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 18px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #7F7F7F1A;
+    font-size: 11px;
+    font-weight: 500;
+    color: #7F7F7F;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .active{
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .active .number_of_task,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .togolar .active .number_of_meeting{
+    background-color: #1967D21A;
+    color: #1967D2;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content{
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .subject{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .subject h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .subject .status{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6.5px 0;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .subject .status .logo{
+    height: 9px;
+    width: 9px;
+    background: url(Images/status_icon_1.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .subject .status p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #DFA000;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .sub_details .project_name{
+    font-size: 12px;
+    font-weight: 400;
+    color: #38383899;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time .where{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time .where .logo{
+    height: 26px;
+    width: 26px;
+    background: url(Images/meet.svg) no-repeat center;
+}
+
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .main_content .where_time .where .logo{
+    height: 26px;
+    width: 26px;
+    background: url(Images/zoom.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time .where p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time .time{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: end;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838B3;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .main_content .where_time p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #383838;
+}
+
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content{
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    border-top: 0 !important;
+    border: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .with{
+    padding: 5px 9px 5px 5px;
+    border-radius: 25px;
+    border: 1px solid #EDEDEDB3;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .with .logo{
+    height: 20px;
+    width: 20px;
+    background: url(Images/agency.svg) no-repeat center;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .with p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838CC;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .line{
+    height: 26px;
+    border-left: 1px solid #E8E8E8;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .members{
+    display: flex;
+    
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .details a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #398400;
+    
+}
+
+
+
+
+
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .members .member_1,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .members .member_2,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .members .member_3,
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card .bottom_content .stap .members .member_4{
+    width: 26px;
+    height: 26px;
+    background: url(Images/Member_1.svg) no-repeat center;
+ 
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_1 .bottom_content .stap .members .member_2{
+    position: relative;
+    right: 4px;
+    background-image: url(Images/member_2.svg);
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_1 .bottom_content .stap .members .member_3{
+    position: relative;
+    right: 8px;
+    background-image: url(Images/member_3.svg);
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_1 .bottom_content .stap .members .member_4{
+    position: relative;
+    right: 12px;
+    background-image: url(Images/member_4.svg);
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .members .member_1{
+    background-image: url(Images/card_2\ m_1.svg);
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .members .member_2{
+    background-image: url(Images/card_2\ m_2.svg);
+    position: relative;
+    right: 4px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .members .member_3{
+    background-image: url(Images/card_2\ m_3.svg);
+    position: relative;
+    right: 8px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .members .member_4{
+    background-image: url(Images/card_2\ m_4.svg);
+    position: relative;
+    right: 12px;
+}
+
+.dashboard_appilix .main_appilix .content .time_traker_schedule .schedule .task_meeting .meeting .meeting_card_2 .bottom_content .stap .members .member_5{
+    height: 26px;
+    width: 26px;
+    background-image: url(Images/card_2\ m_5.svg);
+    position: relative;
+    right: 16px;
+}
+
+
+
 
 
 
